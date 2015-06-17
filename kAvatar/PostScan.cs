@@ -138,10 +138,10 @@ namespace kAvatar
                 //HEAD STITCHING STARTS HERE 
                 HeadStitch hs = new HeadStitch(h1, h2, user_ID, PBID);
                 hs.copy();
-                hs.headStitchStart();
+                //hs.headStitchStart();
 
                 //CLEANING AND MAKING FOLDER STARTS HERE
-                //Cleaner cl = new Cleaner(user_ID, PBID);
+                Cleaner cl = new Cleaner(user_ID, PBID);
                 //cl.MakeFolderAndClean();
                 this.Close();
             }
