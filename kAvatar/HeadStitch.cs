@@ -100,7 +100,6 @@ namespace kAvatar
             cmd5 = pbOBJOutputPath + PBID + ".obj " + userOBJOutputPath + userID + ".obj " + userOBJOutputPath + userID + ".mtl " +
                 TargetPath + userID + "C.obj " + TargetPath + userID + "C.mtl " + h1 + " " + h2;
             executeCommands("mAvatar.exe",cmd5);
-
         }
     }
 }

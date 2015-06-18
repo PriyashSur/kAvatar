@@ -96,7 +96,7 @@ namespace kAvatar
                 user_ID = iCreateNewUser(fname, lname, _age, g, Convert.ToInt64(mobile));
 
                 //RECONSTRUCTME ENGINE START
-                //ReconstructMe reme = new ReconstructMe(user_ID);
+                ReconstructMe reme = new ReconstructMe(user_ID);
                 //reme.Start_Scan();
 
                 //PASSING THE VALUES ONTO THE NEXT PAGE
@@ -112,10 +112,8 @@ namespace kAvatar
             catch(FormatException fe)
             {
                 MessageBox.Show("Inkarne Exception : "+fe.Message,"Inkarne_Exception");
-            }
-            
+            }          
         }
-
      
         //LOOK UP BUTTON
         private void button2_Click(object sender, EventArgs e)

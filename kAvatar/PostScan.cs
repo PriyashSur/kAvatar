@@ -115,7 +115,7 @@ namespace kAvatar
             conn.Close();
         }
 
-        //USER REGISTER BUTTON
+        //USER REGISTER BUTTON EVENT
         private void button3_Click(object sender, EventArgs e)
         {
             try
@@ -147,7 +147,7 @@ namespace kAvatar
             }
             catch(Exception _e)
             {
-                MessageBox.Show("Inkarne Exception! : " + _e.Message,"Inkarne_Exception");
+                MessageBox.Show("Inkarne_Exception! : " + _e.Message,"Inkarne_Exception");
             }
         }
         //LOOK UP BUTTON
@@ -171,5 +171,22 @@ namespace kAvatar
                 e.Handled = true;
             }
         }
+
+        private void height_validate(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == '.')
+            {
+                if (this.height.Text.Contains(".") && !this.height.SelectedText.Contains("."))
+                {
+                    e.Handled = true;
+                }
+            }
+            else if (!Char.IsDigit(e.KeyChar) && e.KeyChar != 0x08)
+            {
+                e.Handled = true;
+            }
+        }
+
+
     }
 }

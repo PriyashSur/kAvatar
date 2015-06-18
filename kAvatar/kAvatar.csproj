@@ -94,7 +94,6 @@
     <Compile Include="LookUpScreen.Designer.cs">
       <DependentUpon>LookUpScreen.cs</DependentUpon>
     </Compile>
-    <Compile Include="Motor.cs" />
     <Compile Include="PBIdentification.cs" />
     <Compile Include="PostScan.cs">
       <SubType>Form</SubType>

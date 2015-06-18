@@ -182,6 +182,7 @@
             this.height.Name = "height";
             this.height.Size = new System.Drawing.Size(56, 22);
             this.height.TabIndex = 90;
+            this.height.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.height_validate);
             // 
             // label3
             // 
